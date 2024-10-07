@@ -337,11 +337,14 @@
   #age-btn{
     margin: 28% auto;
   }
+  .contact{
+    /* margin-top: 20%; */
+  }
   .contact-box{
-    height: 17vh;
+    height: 100px;
   }
   .contact-title{
-    margin: 2000px auto 0;
+    margin: 600% auto 0;
   }
   .contact-box{
     margin: 7% auto 7%;
@@ -387,7 +390,7 @@
     margin: 38% auto;
   }
   .contact-box{
-    height: 17vh;
+    height: 100px;
   }
   .contact-title{
     margin: 2000px auto 0;
