@@ -327,6 +327,30 @@
   }
 }
 
+@media (min-width: 321px) and (max-width: 376px) {
+  #digital-btn{
+    margin:50% auto;
+  }
+  #id-btn{
+    margin: 15% auto;
+  }
+  #age-btn{
+    margin: 28% auto;
+  }
+  .contact-box{
+    height: 17vh;
+  }
+  .contact-title{
+    margin: 2000px auto 0;
+  }
+  .contact-box{
+    margin: 7% auto 7%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media(max-width: 321px){
   .hey{
     font-size: 25px
