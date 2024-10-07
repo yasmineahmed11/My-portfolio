@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="logo"><i class="fa-solid fa-y"></i> | Yasmine</div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="links" id="nav-links">
+      <a href="#home" class="home">Home</a>
+      <a href="#about" class="about-link">About</a>
+      <a href="#resume" class="resume">Resume</a>
+      <a href="#projects" class="projects">Projects</a>
+      <a href="#contact" class="contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="intro" id="home">
+    <p class="hey">HEY! I AM</p>
+    <p class="name">Yasmine Ahmed</p>
+    <p class="iam">I'm a <span id="changing-text"></span></p>
+  </div>
+
+  <div class="about" id="about">
+    <div class="about-left">
+      <img src="./images/me.jpeg" alt="me">
+    </div>
+
+    <div class="about-right">
+      <p class="about-me"><i class="fa-solid fa-address-card"></i> About Me</p>
+      <p class="about-desc">Frontend Developer studing Business Technology (70% CS, 30% Business). Expertise in frontend technologies, dedicated to crafting user-friendly interfaces.</p>
+      <table class="info">
+        <tr>
+          <td class="table-left">Name:</td>
+          <td class="table-right">Yasmine Ahmed</td>
+        </tr>
+        <tr>
+          <td class="table-left">Date of birth:</td>
+          <td class="table-right">March 16, 2004</td>
+        </tr>
+        <tr>
+          <td class="table-left">Address:</td>
+          <td class="table-right">Nasr City, Cairo</td>
+        </tr>
+        <tr>
+          <td class="table-left">Email:</td>
+          <td class="table-right">yasmineahmedsayed33@gmail.com</td>
+        </tr>
+      </table>
+
+      <div class="button" data-tooltip="Size: 20Mb">
+        <div class="button-wrapper">
+          <div class="text">Download CV</div>
+          <a href="./cv/Yasmine-Ahmed-CV-frontend.pdf" download="Yasmine_Ahmed_CV" class="download-btn">            <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+          </span></a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="resume" class="resume-content">
+    <div class="education">
+      <p class="edu-title">EDUCATION</p>
+      <div class="edu-details">
+        <div class="edu-left"><i class="fa-solid fa-building-columns"></i></div>
+
+        <div class="edu-right">
+          <div class="exp-date"><p>2022 - 2026</p></div>
+          <div class="college">Canadian International College</div>
+          <div class="faculty">Faculty of Business Technology</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="exp-title">EXPERIENCE</p>
+    <div class="experience">
+      <div class="exp-details">
+      <div class="exp-left">
+        <i class="fa-solid fa-briefcase"></i>
+      </div>
+
+      <div class="exp-right">
+        <p class="exp-date">04/2024 - 10/2024</p>
+        <p class="exp-pos">Frontend developer intern</p>
+        <p class="exp-place">Digital Egyptian Pioneer Innovation</p>
+      </div>
+      </div>
+
+      <div class="exp-details">
+        <div class="exp-left">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+
+        <div class="exp-right">
+          <p class="exp-date">05/2024 - 8/2024</p>
+          <p class="exp-pos">Frontend Instructor</p>
+          <p class="exp-place">Little Academy</p>
+        </div>
+      </div>
+      <div class="exp-details">
+        <div class="exp-left">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+
+        <div class="exp-right">
+          <p class="exp-date">2024 - 2025</p>
+          <p class="exp-pos">Frontend Volunteer</p>
+          <p class="exp-place">IEEE HSB</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills">
+      <p class="skills-title">SKILLS</p>
+      <div class="skills-table">
+        <table>
+          <tr>
+            <td>HTML5</td>
+            <td>CSS</td>
+            <td>Javascript</td>
+          </tr>
+  
+          <tr>
+            <td>Typescript</td>
+            <td>SAAS</td>
+            <td>Angular</td>
+          </tr>
+
+          <tr>
+            <td>Bootstrap</td>
+            <td>Git / Github</td>
+            <td>C++</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-title">Projects</div>
+  <div class="project" id="projects">
+    <table class="proj">
+      <tr>
+        <tr class="image-pro">
+          <td>
+            <img src="./images/to-do.png" alt="">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="td-title">To-Do List</td>
+        </tr>
+
+        <tr>
+          <td class="td-desc">
+            Implemented features like adding, editing, deleting, and marking tasks as completed by clicking on them. Ensured mobile responsiveness and user-friendly design. Utilized JavaScript for dynamic task management and local storage for persistent data.
+          </td>
+        </tr>
+        <tr>
+          <td class="git-container">
+  <button class="btn-github">
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+      fill="currentcolor"
+    ></path>
+  </svg>
+  <div class="github"><a href="https://yasmineahmed11.github.io/ToDo-List/" target="_blank">View On Github</a></div>
+</button>
+
+          </td>
+        </tr>
+      </tr>
+    </table>
+
+    <table class="proj">
+      <tr>
+        <tr class="image-pro">
+          <td>
+            <img src="./images/digital-clock.png" alt="">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="td-title">Digital Clock</td>
+        </tr>
+
+        <tr>
+          <td class="td-desc">
+            Built a digital clock using JavaScript with 'STOP' and 'PLAY' controls, allowing users to pause and resume time updates.          </td>
+        </tr>
+
+        <tr>
+          <td>
+  <button class="btn-github" id="digital-btn">
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+      fill="currentcolor"
+    ></path>
+  </svg>
+  <div class="github"><a href="https://yasmineahmed11.github.io/Digital-Clock/" target="_blank">View On Github</a></div>
+</button>
+
+          </td>
+        </tr>
+      </tr>
+    </table>
+
+    <table class="proj">
+      <tr>
+        <tr class="image-pro">
+          <td>
+            <img src="./images/id.png" alt="">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="td-title">Egyptian ID Analyzer</td>
+        </tr>
+
+        <tr>
+          <td class="td-desc">
+            Created a JavaScript project that analyzes Egyptian national ID numbers, extracting information like birthdate, birth governorate location and gender.          </td>
+        </tr>
+        <tr>
+          <td class="git-container">
+  <button class="btn-github" id="id-btn">
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+      fill="currentcolor"
+    ></path>
+  </svg>
+  <div class="github"><a target="_blank" href="https://yasmineahmed11.github.io/Egyptian-ID-Analysis/">View On Github</a></div>
+</button>
+
+          </td>
+        </tr>
+      </tr>
+    </table>
+
+    <table class="proj">
+      <tr>
+        <tr class="image-pro">
+          <td>
+            <img src="./images/age.png" alt="">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="td-title">Age Calculator</td>
+        </tr>
+
+        <tr>
+          <td class="td-desc">
+            Developed a responsive Age Calculator that allows users to input their birthdate and calculate their age in years, months and days!        </tr>
+        <tr>
+          <td class="git-container">
+  <button class="btn-github" id="age-btn">
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+      fill="currentcolor"
+    ></path>
+  </svg>
+  <div class="github"><a target="_blank" href="https://yasmineahmed11.github.io/Age_Calculator/">View On Github</a></div>
+</button>
+
+          </td>
+        </tr>
+      </tr>
+    </table>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="contact-title">
+      Get In Touch!
+    </div>
+    <div class="contact-box">
+      <div class="icon-cont"><a href="https://www.linkedin.com/in/yasmine-ahmed-229168236" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a></div>
+      <div class="icon-cont">
+        <a href="https://github.com/yasmineahmed11" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="icon-cont">
+        <a href="mailto:yasmineahmedsayed33@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <div class="icon-cont"><a href="https://www.facebook.com/profile.php?id=100047458461916" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a></div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/fed0a73643.js" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
